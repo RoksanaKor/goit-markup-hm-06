@@ -551,12 +551,7 @@ padding-bottom: 16px;
   padding-left: 0;
 }
 
-.wrapper-footer-alt {
-  display:flex;
-  margin: 0;
-  gap: 24px;
-  padding-left: 0;
-}
+
 
 
 .wrapper-footer > ul {
@@ -723,42 +718,34 @@ padding-bottom: 16px;
   fill: var(--color-contrast-brighter);
 }
 
-.form-field-wrapper {
-  
-  display: flex;
+.wrapper-footer-alt > input {
   border-radius: 4px;
   border: 1px solid var(--color-contrast-brighter);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  overflow:hidden;
   width: 264px;
-  height: 40px;
   flex-shrink: 0;
   background-color: var(--color-heading-primary);
-  gap: 8px;
+  margin-right: 24px;;
+  padding-left: 16px;
 }
 
-.form-field-wrapper > label {
+.wrapper-footer-alt {
+  display:flex;
+}
+
+.wrapper-footer-alt > input::placeholder {
   color: var(--color-contrast-brighter);
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2;
   letter-spacing: 0.48px;
-  padding: 8px 0 8px 16px;
-  display: flex;
-  align-items: center;
 }
 
-.form-field-wrapper > input {
-  padding: 0;
-  border: 0;
-  margin: 0;
-  background-color: transparent;
-  
-}
 
-.form-field-wrapper > input:focus,
-.form-field-wrapper > input:hover,
-.form-field-wrapper > input:active {
+
+.wrapper-footer-alt > input:focus,
+.wrapper-footer-alt > input:hover,
+.wrapper-footer-alt > input:active {
   outline: none;
   color: var(--color-contrast-brighter);
   transition: var(--transition-variable);
@@ -833,6 +820,7 @@ textarea {
   position: relative;
   margin: 4px 0 8px;
   padding: 11px 0 0 16px;
+  resize: none;
 }
 
 .form-modal-element:focus-within,
@@ -877,7 +865,7 @@ input#email {
 
 
 input[type="checkbox"] {
-  appearance: none;
+  margin-right: 10px;
 }
 
 .tc-checkbox > svg {
@@ -894,6 +882,7 @@ input[type="checkbox"] {
   justify-content: center;
   margin-right: 8px;
   opacity: 0;
+  position:absolute
 }
 
 input:checked + .checkmark {
